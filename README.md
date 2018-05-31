@@ -1,2 +1,0 @@
-# ChickenStories
-html+js+css
