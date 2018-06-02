@@ -1,6 +1,11 @@
 *{
 	padding: 0;
 	margin:0;
+	-webkit-tap-highlight-color:transparent;
+}
+a{
+	text-decoration:none;
+	color: #464646;
 }
 @media screen and (max-width: 46.8125em){
 	html {
@@ -293,4 +298,84 @@ a{
 .box .steps .food_des{
 	padding: 18px 0 30px 0;
 	border-top: 1px solid #CDCDCD;
+}
+.box .section #comment{
+	background-image: url(../images/dot.png);
+	background-size: 6.5px 3px;
+	background-repeat: repeat-x;
+	background-position: top;
+	font-size: 1rem;
+    font-weight: 600;
+}
+.box .section #comment p{
+	padding: 20px 0 20px;
+}
+.box .section #comment .comment-input{
+	width: 100%;
+}
+.box .section #comment .comment-input .img_left{
+	width:62px;
+	float: left;
+}
+.box .section #comment .comment-input .img_left img{
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.box .section #comment .comment-input .input_rig{
+	margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #d8d8d8;
+    padding: 0.5rem 1rem 0;
+}
+.box .section #comment .comment-input .input_rig textarea{
+	width: 100%;
+	resize: none;
+	border:none;
+	font-size: 1rem;
+	min-height: 50px;
+	word-wrap: break-word;
+	margin-bottom:30px; 
+	outline: none;
+}   
+.box .section #comment .choose_img{
+	float: left;
+	color: #222;
+	font-size: .79545rem;
+    background-color: #f2f2f2;
+    display: inline-block;
+    border-radius: 4px;
+    padding:8px 12px;
+    cursor: pointer;
+    font-weight: 400;
+    vertical-align: middle;
+    margin-bottom: 18px;
+}
+.box .section #comment input{
+	display: none;
+}
+.box .section #comment .choose_img img{
+	width: 20px;
+	display:block;
+	float: left;
+	vertical-align: middle;
+}
+.box .section #comment .send{
+    background-color: #0da299;
+    color: #fff;
+    border-radius: 4px;
+    height: 35px;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0;
+    transition: opacity 0.25s ease-out;
+    padding: 0 1rem 2px;
+    min-width: 100px;
+    float: right;
+    outline: none;
 }
