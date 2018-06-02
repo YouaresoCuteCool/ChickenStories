@@ -1,0 +1,296 @@
+*{
+	padding: 0;
+	margin:0;
+}
+@media screen and (max-width: 46.8125em){
+	html {
+   		font-size: 100%;
+	}
+}
+body{
+	font-family: Brandon,Helvetica,sans-serif,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+	color: #464646;
+}
+html{
+	box-sizing: border-box;
+	font-size: 110%;
+}
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: .85227rem;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    line-height: 1.133;
+}
+h1{
+	font-size: 1.5rem;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+.box{
+	max-width: 860px;
+	width: 95%;
+	margin:30px auto;
+}
+.box .box-header{
+	width: 100%;
+}
+.box .box-header img{
+	max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+	border-radius: 10px;
+}
+.box .box-nav ul{
+	list-style: none;
+	margin-top: 20px;
+}
+.box .box-nav .f_left{
+	float: left;
+}
+.box .box-nav .f_left .active a{
+	color: black;
+	border-bottom: 2px solid #0a7f78;
+}
+.box .box-nav ul li{
+	float: left;
+}
+.box .box-nav .f_left li a{
+	color: #0a7f78;
+    font-weight: 600;
+    padding: 1rem 0;
+    margin-right: 2rem;
+}
+.box .box-nav .f_right{
+	float: right;
+}
+.box .box-nav .f_right img{
+	height: 20px;
+}
+.box .box-nav .f_right li{
+	padding: 0 .45455rem;
+}
+.box .box-sec{
+	border-top: 1px solid #CDCDCD;
+	clear: both;
+	margin-top: 62px;
+	padding-top: 20px;
+}
+.box .section{
+	width: 65%;
+	float: left;
+}
+.box .section .dot{
+	clear: both;
+	width: 100%;
+	background-image: url(../images/dot.png);
+	background-size: 6.5px 3px;
+	height: 3px;
+	margin-top: 55px;
+}
+.box .box-sec .stars img{
+	width: 19px;
+	height: 19px;
+	margin-right: 10px;
+}
+.box .box-sec .stars{
+	color: #464646;
+	font-size: 80%;
+	margin-top: 20px;
+}
+.box .box-sec .stars .like{
+	margin-top: 15px;
+}
+.box .box-sec .stars .like .heart{
+	background-image: url(../images/icon_heart.svg);
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    background-repeat: no-repeat; 
+    background-position: 5px;
+	float:left;
+	padding-left: 28px;
+	margin-right: 5px;
+}
+.box .box-sec .stars .like .save{
+	background-image: url(../images/save.svg);
+    width: 25px;
+    height: 21px;
+    line-height: 21px;
+    background-repeat: no-repeat; 
+    background-size: contain;
+	float:left;
+	padding-left: 22px;
+	margin-right: 5px;
+}
+.box .box-sec .stars .like a{
+	color: #8e8e8e;
+    font-size: 80%;
+}
+.box .section .easy{
+	margin-top: 20px;
+	padding-bottom: 20px;
+	background-image: url(../images/dot.png);
+	background-size: 6.5px 3px;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.box .section .easy h2{
+	margin: 0 2rem 0 0;
+	float: left;
+}    
+.box .section .time{
+	clear: both;
+	padding-top: 20px;
+	padding-bottom: 130px;
+	margin: 0 auto;
+	background-image: url(../images/dot.png);
+	background-size: 6.5px 3px;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.box .section .time .clock-items{
+	float: left;
+	margin-left: 15%;
+}
+.box .section .time .clock{
+	width: 80px;
+	height: 80px;
+	border:1px solid #CDCDCD;
+	border-radius: 40px;
+	color: #464646;
+	text-align: center;
+	font-weight: lighter;
+}
+.box .aside{
+	width: 34%;
+	float: right;
+}
+.box .aside .tigs{
+	padding-top: 20px;
+}
+.box .aside .tigs .tig-img{
+    width: 45%;
+    float: left;
+    margin-bottom: 15px;
+}
+.box .aside img{
+	width:100%;
+	border-radius: 15px;
+}
+.box .aside .tigs .tig-tit{
+	height: 122px;
+	vertical-align: top;
+	font-size: 80%;
+    width: 50%;
+    font-weight: 200;
+    overflow: hidden;
+    float: right;
+}
+.box .section .material{
+	margin-top: 30px;
+}
+.box .section .material span{
+	font-size: 80%;
+	font-weight: 600;
+}
+.box .section .material .num{
+	padding: 0 5px;
+}
+.box .section .material input{
+	vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #0a7f78;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin: 0 0 2px;
+}
+.box .section .material .ma_num{
+	width: 100%;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	font-weight: 200;
+	background-image: url(../images/dot.png);
+	background-size: 6.5px 3px;
+	background-repeat: repeat-x;
+	background-position: bottom;
+} 
+.box .section .material .ma_num .col_num{
+	width: 30%;
+	text-align: left;
+}
+.box .section .material .ma_num .col_name{
+	width: 70%;
+}
+.box .section .nife{
+	padding: 30px 0;
+	background-image: url(../images/dot.png);
+	background-size: 6.5px 3px;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.box .section .nife p{
+	font-weight: 200;
+}
+.box .section .nutrition{
+	padding: 30px 0;
+	background-image: url(../images/dot.png);
+	background-size: 6.5px 3px;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.box .section .nutrition .nutri{
+	display: flex;
+}
+.box .section .nutrition .nutri_item{
+	width: 10%;
+	padding-left: 5%;
+	padding-right: 10%;
+	font-weight: 200;
+	border-left: 1px solid #CDCDCD;
+}
+.box .section .nutrition .nutri_item:nth-child(1){
+	padding-left: 0%;
+	border-left: 1px solid transparent;
+}
+.box .steps{
+	padding-top: 20px;
+	font-weight: 200;
+}
+.box .steps img{
+	width:100%;
+	border-radius: 15px;
+}
+.box .steps ul{
+	clear: both;
+	height: 18px;
+	list-style: none;
+	background-image: url(../images/icon_ingredients.svg);
+	background-repeat: no-repeat;
+	background-size: 25px 18px;
+	padding:0 0 15px 30px;
+	margin:10px 0;
+}
+.box .steps ul li{
+	float: left;
+	padding: 0 5px;
+}
+.box .steps p{
+	clear: both;
+	background-image: url(../images/icon_utensils.svg);
+	background-repeat: no-repeat;
+	background-size: 25px 18px;
+	background-position:0px;
+	padding:10px 0 10px 30px;
+}
+.box .steps .food_des{
+	padding: 18px 0 30px 0;
+	border-top: 1px solid #CDCDCD;
+}
