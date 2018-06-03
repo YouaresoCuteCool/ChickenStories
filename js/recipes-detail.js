@@ -88,4 +88,75 @@ var autoTextarea = function(elem, extra, maxHeight) {
     change();  
 };  
 var text = document.getElementsByTagName("textarea")[0];  
+document.getElementsByClassName('box-nav')[0]
 autoTextarea(text); // 调用  
+// 滚动到某个位置固定导航栏
+document.addEventListener('scroll', function (event) { 
+    var scrollDistance = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollDistance >= 600) {    // 触发的位置
+        document.getElementsByClassName('box-nav')[0].style.cssText="max-width: 860px;width: 95%;margin:0 auto;"
+        document.getElementsByClassName('nav-header')[0].style.cssText = 'position:fixed;top:0px;left:0px;width:100%;border-bottom: 1px solid #CDCDCD;';
+    } else {
+        document.getElementsByClassName('nav-header')[0].style.cssText = 'position:static;';
+    }
+});
+var flag=true;
+$('.box .box-sec .stars .like .heart').click(function(){
+    if(flag){
+        $(this).css({
+            'background-image':'url(../images/icon_heart_made_in_berlin.svg)',
+            'background-size':'16px'
+         });
+        $(this).text(' 835');
+    }else{
+         $(this).css({
+            'background-image':'url(../images/icon_heart.svg)',
+            'background-size':'16px'
+         });
+         $(this).text(' 834');
+    }
+    flag=!flag;
+})
+$('.save').click(function(){
+    $('.modal-mask').css('display','table');
+})
+$('.modal-close-button').click(function(){
+    $('.modal-mask').css('display','none');
+})
+$('.box .section .comments .language button').click(function(){
+    if(flag){
+        $(this).siblings().css('display','block');
+    }else{
+        $(this).siblings().css('display','none');
+    }
+    flag=!flag;
+})
+$('.res_num').click(function(){
+     if(flag){
+        $(this).css({
+            'background-image':'url(../images/icon_heart_made_in_berlin.svg)',
+            'background-size':'16px'
+         });
+        $(this).text(' 1');
+    }else{
+         $(this).css({
+            'background-image':'url(../images/icon_heart.svg)',
+            'background-size':'16px'
+         });
+         $(this).text(' 0');
+    }
+    flag=!flag;
+})
+$('.reply').click(function(){
+    $(this).siblings().css('display','inline-block');
+})
+// 点击空白处消失
+$(".report_button").click(function(event){
+    //取消冒泡事件
+    event.stopPropagation();//这句是必须
+    $(this).siblings().show();
+});
+//点击空白或者其他区域时divTop隐藏
+$(document).click(function(){
+    $(".box .section .comments .dropdown_button").hide();
+});

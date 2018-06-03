@@ -8,10 +8,71 @@
 	<script src="../js/jquery-3.3.1.js"></script>
 </head>
 <body>
+	<div class="cookbook-save-recipe-modal modal-mask">
+		<div class="modal-wrapper">
+			<div class="modal-container">
+				<div class="modal-header">
+					<button class="modal-close-button"></button>
+				</div>
+				<div class="modal-content">
+					<h1 class="cookbook-save-recipe-modal__headline">保存食谱</h1>
+					<img src="https://images.kitchenstories.io/recipeImages/R1240-photo-final/R1240-photo-final-icon-portrait-200.jpg" alt="芦笋草本煎蛋饼" class="resized-image cookbook-save-recipe-modal__image">
+					<h2 class="cookbook-save-recipe-modal__recipe-title">芦笋草本煎蛋饼</h2>
+					<p class="cookbook-save-recipe-modal__move">加入烹饪书</p>
+					<div class="cookbook-save-recipe-modal__select-container">
+						<select class="cookbook-save-recipe-modal__select">
+							<option value="create">我的第一本烹饪书</option>
+						</select>
+					</div>
+					<div class="cookbook-save-recipe-modal__error"><!----></div>
+					<div class="cookbook-save-recipe-modal__buttons"><button class="default-button cookbook-save-recipe-modal__buttons__create default-button--blank-green">创建一本烹饪书</button>
+						<button class="loading-button cookbook-save-recipe-modal__buttons__save loading-button--bg-green">
+							<div class="loading-button__label loading-button--bg-green__label">保存</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-masks">
+		<div class="modal-wrappers">
+			<div class="modal-containers">
+				<div class="modal-headers">
+					<button class="modal-close-buttons"></button>
+				</div>
+				<div class="modal-contents">
+					<div class="modal-report-component-mains">
+						<h1>反映</h1><br>	
+						<p>举报的原因是什么？</p><br>
+						<input type="radio" name="res" id="reason-porn" value="porn">
+						<label for="reason-porn">裸体或者色情</label><br>
+						<input type="radio" name="res" id="reason-attacks" value="attacks">
+						<label for="reason-attacks">攻击团体或个人</label><br>
+						<input type="radio" name="res" id="reason-violence" value="violence">
+						<label for="reason-violence">暴力画面</label><br>
+						<input type="radio" name="res" id="reason-hateful-speech" value="hateful-speech">
+						<label for="reason-hateful-speech">可恶的言论或符号</label><br>
+						<input type="radio" name="res" id="reason-self-harm" value="self-harm">
+						<label for="reason-self-harm">积极推动自残</label><br>
+						<input type="radio" name="res" id="reason-spam" value="spam">
+						<label for="reason-spam">垃圾邮件</label><br>
+						<input type="radio" name="res" id="reason-other" value="other">
+						<label for="reason-other">其他</label>
+						<p class="modal-report-component-main__submit">
+							<button class="loading-button loading-button--bg-green">
+								<div class="loading-button__label">提交举报</div>
+							</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="box">
 		<div class="box-header">
 			<img src="../images/R1240-photo-final-medium-landscape-200.jpg" alt="">
 		</div>
+		<div class="nav-header">
 		<div class="box-nav" id="describe">
 			<ul class="f_left">
 				<li class="active"><a href="#describe">概述</a></li>
@@ -25,6 +86,8 @@
 				<li><a href=""><img src="../images/icon_mail.svg" alt=""></a></li>
 				<li><a href=""><img src="../images/icon_print.svg" alt=""></a></li>
 			</ul>
+			<div class="fr_share"><img src="../images/icon_share.svg" alt=""></div>
+		</div>
 		</div>
 		<div class="box-sec">
 			<div class="section">
@@ -38,8 +101,8 @@
 						<img src="../images/icon_star_filled.svg" alt="">
 						<span>10 评分</span>
 						<div class="like">
-							<a href=""><div class="heart"> 834</div></a> 
-							<a href=""><div class="save">保存</div></a> 
+							<div class="heart"> 834</div> 
+							<div class="save">保存</div>
 						</div>
 					</div>
 				</div>
@@ -49,6 +112,7 @@
 					<span>易👌</span>
 				</div>
 				<div class="time">
+					<div class="time-clock">
 					<div class="clock-items">
 						<div class="clock">
 							<canvas width="80px" height="80px"></canvas>
@@ -67,6 +131,7 @@
 							静置时间
 						</div>
 					</div>
+				</div>
 				</div>
 				<div class="material">
 					<h2>食材</h2>
@@ -206,11 +271,11 @@
 					<ul>
 						<li><span></span><strong></strong>佐餐用山萝卜 -</li>
 						<li><span></span><strong></strong>佐餐用莫尔登海盐 -</li>
-						<li><span></span><strong></strong>佐餐用柠檬 -</li>
+						<li><span></span><strong></strong>佐餐用柠檬</li>
 					</ul>
 					<div class="food_des">将蛋饼从烤箱中取出，饰以山萝卜、莫尔登海盐，佐以柠檬块。尽情享用吧！</div>
 				</div>
-				<div id="comment">
+				<div class="comm" id="comment">
 					<p>评论 (3)</p>
 					<div class="comment-input">
 						<div class="img_left"><img src="../images/60C4FBA2-487C-47C9-BE10-31FC3B9E45A3_b257497f.jpg" alt=""></div>
@@ -218,29 +283,95 @@
 						<label for="choose_file" class="choose_img"><img src="../images/icon_camera.svg" alt=""> &nbsp;添加图片<input type="file" id="choose_file"></label>
 						<button class="send">发送</button>
 						</div>
-						
 					</div>
 				</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+				<ul class="comments">
+					<li>
+						<div class="img_left"><img src="../images/1b118dcd-06e8-4b72-9a7a-9bdb41202d7e_1fac41a9.jpg" alt=""></div>
+						<div class="des_rig">
+							<h2 class="headline">Kevin Litherland</h2>
+							<button class="report_button"><img src="../images/icon_report.svg" alt=""></button>
+							<button class="dropdown_button">反映</button>
+							<p class="time_ago">10小时前 🇨🇳</p>
+							<p class="text">Yum加上了一点可爱的费城</p>
+							<div class="language">
+								<button>显示原文：English</button>
+								<div class="show_more">&nbsp;Yum added a bit of Philadelphia on top lovely</div>
+							</div>
+							<div class="comment_images"></div>
+							<div class="response">
+								<div class="res_all">
+									<button class="res_num"> 0</button>
+									<button class="reply"> 回复</button>
+									<div class="comment-input">
+										<div class="img_left"><img src="../images/60C4FBA2-487C-47C9-BE10-31FC3B9E45A3_b257497f.jpg" alt=""></div>
+										<div class="input_rig"><textarea name="" id="" placeholder="回复" width="100%"></textarea>
+										<label for="choose_file" class="choose_img"><img src="../images/icon_camera.svg" alt=""> &nbsp;添加图片<input type="file" id="choose_file"></label>
+										<button class="send">发送</button>
+									</div>
+								</div>
+								<div class="res_per"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="img_left"><img src="../images/1b118dcd-06e8-4b72-9a7a-9bdb41202d7e_1fac41a9.jpg" alt=""></div>
+						<div class="des_rig">
+							<h2 class="headline">Kevin Litherland</h2>
+							<button class="report_button"><img src="../images/icon_report.svg" alt=""></button>
+							<button class="dropdown_button">反映</button>
+							<p class="time_ago">2天前 🇬🇧</p>
+							<p class="text">非常好。以不同的方式芦笋，将再次完成！</p>
+							<div class="language">
+								<button>显示原文：German</button>
+								<div class="show_more">&nbsp;Sehr gut. Spargeln auf eine andere Art. Wird wieder gemacht!</div>
+							</div>
+							<div class="comment_images"></div>
+							<div class="response">
+								<div class="res_all">
+									<button class="res_num"> 0</button>
+									<button class="reply"> 回复</button>
+									<div class="comment-input">
+										<div class="img_left"><img src="../images/60C4FBA2-487C-47C9-BE10-31FC3B9E45A3_b257497f.jpg" alt=""></div>
+										<div class="input_rig"><textarea name="" id="" placeholder="回复" width="100%"></textarea>
+										<label for="choose_file" class="choose_img"><img src="../images/icon_camera.svg" alt=""> &nbsp;添加图片<input type="file" id="choose_file"></label>
+										<button class="send">发送</button>
+									</div>
+								</div>
+								</div>
+								<div class="res_per"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="img_left"><img src="../images/1b118dcd-06e8-4b72-9a7a-9bdb41202d7e_1fac41a9.jpg" alt=""></div>
+						<div class="des_rig">
+							<h2 class="headline">Kevin Litherland</h2>
+							<button class="report_button"><img src="../images/icon_report.svg" alt=""></button>
+							<button class="dropdown_button">反映</button>
+							<p class="time_ago">2天前 🇨🇭</p>
+							<p class="text">第一眼看像披萨</p>
+							<div class="language">
+								<button>显示原文：Chinese</button>
+								<div class="show_more">&nbsp;第一眼看像披萨</div>
+							</div>
+							<div class="comment_images"></div>
+							<div class="response">
+								<div class="res_all">
+									<button class="res_num"> 0</button>
+									<button class="reply"> 回复</button>
+									<div class="comment-input">
+										<div class="img_left"><img src="../images/60C4FBA2-487C-47C9-BE10-31FC3B9E45A3_b257497f.jpg" alt=""></div>
+										<div class="input_rig"><textarea name="" id="" placeholder="回复" width="100%"></textarea>
+										<label for="choose_file" class="choose_img"><img src="../images/icon_camera.svg" alt=""> &nbsp;添加图片<input type="file" id="choose_file"></label>
+										<button class="send">发送</button>
+									</div>
+								</div>
+								<div class="res_per"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 			<div class="aside">
 				<h4>更多美味创意</h4>
