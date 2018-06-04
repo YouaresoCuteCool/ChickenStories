@@ -93,13 +93,23 @@ autoTextarea(text); // 调用
 // 滚动到某个位置固定导航栏
 document.addEventListener('scroll', function (event) { 
     var scrollDistance = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollDistance >= 600) {    // 触发的位置
-        document.getElementsByClassName('box-nav')[0].style.cssText="max-width: 860px;width: 95%;margin:0 auto;"
+    if (scrollDistance >= 600&&scrollDistance<=1500) {    // 触发的位置
         document.getElementsByClassName('nav-header')[0].style.cssText = 'position:fixed;top:0px;left:0px;width:100%;border-bottom: 1px solid #CDCDCD;';
-    } else {
-        document.getElementsByClassName('nav-header')[0].style.cssText = 'position:static;';
+        document.getElementsByClassName('box-nav')[0].style.cssText="max-width: 860px;width: 95%;margin:0 auto;";
+        document.getElementsByClassName('aside_box')[0].style.cssText = 'position:fixed;top:80px;max-width: 860px;width: 95%;margin:0 auto;';        
+        document.getElementsByClassName('aside')[0].style.cssText="width:34%;margin-right:0px;";
+    }else if(scrollDistance>1500){
+        document.getElementsByClassName('nav-header')[0].style.cssText = 'position:fixed;top:0px;left:0px;width:100%;border-bottom: 1px solid #CDCDCD;';
+        document.getElementsByClassName('box-nav')[0].style.cssText="max-width: 860px;width: 95%;margin:0 auto;";
+        document.getElementsByClassName('aside_box')[0].style.cssText='position:static;';
+        document.getElementsByClassName('aside')[0].style.cssText="position:static;"; 
+    }else{
+        document.getElementsByClassName('nav-header')[0].style.cssText = 'position:static;';  
+        document.getElementsByClassName('aside_box')[0].style.cssText='position:static;';
+        document.getElementsByClassName('aside')[0].style.cssText="position:static;";   
     }
 });
+// 点赞
 var flag=true;
 $('.box .box-sec .stars .like .heart').click(function(){
     if(flag){
@@ -156,7 +166,114 @@ $(".report_button").click(function(event){
     event.stopPropagation();//这句是必须
     $(this).siblings().show();
 });
-//点击空白或者其他区域时divTop隐藏
+// 点击空白处消失
+$(".fr_share").click(function(event){
+    //取消冒泡事件
+    event.stopPropagation();//这句是必须
+    $('.dropdown').show();
+});
+//点击空白或者其他区域时dropdown_button隐藏
 $(document).click(function(){
     $(".box .section .comments .dropdown_button").hide();
+    $('.dropdown').hide();
 });
+$('.dropdown_button').click(function(){
+    $('.modal-masks').css('display','table');
+})
+$('.modal-close-buttons').click(function(){
+    $('.modal-masks').css('display','none');
+})
+$('.f_left li').click(function(event){
+    $('.f_left li').removeAttr('class');
+    $(this).addClass('active');
+})
+// 添加回复
+$('.send').click(function(){
+    if ($('.input_rig textarea').val()=='') {
+        $(this).attr('disabled','disabled');
+    }else{
+        $(this).removeAttr('disabled');
+        $('.comments').prepend('<li>\
+                        <div class="img_left"><img src="../images/60C4FBA2-487C-47C9-BE10-31FC3B9E45A3_b257497f.jpg" alt=""></div>\
+                        <div class="des_rig">\
+                            <h2 class="headline">saling</h2>\
+                            <button class="report_button"><img src="../images/icon_report.svg" alt=""></button>\
+                            <button class="dropdown_button">反映</button>\
+                            <p class="time_ago">刚刚 🇨🇳</p>\
+                            <p class="text">'+$('.input_rig textarea').val()+'</p>\
+                            <div class="language">\
+                                <button>显示原文：Chinese</button>\
+                                <div class="show_more">&nbsp;'+$('.input_rig textarea').val()+'</div>\
+                            </div>\
+                            <div class="comment_images"></div>\
+                            <div class="response">\
+                                <div class="res_all">\
+                                    <button class="res_num"> 0</button>\
+                                    <button class="reply"> 回复</button>\
+                                    <div class="comment-input">\
+                                        <div class="img_left"><img src="../images/60C4FBA2-487C-47C9-BE10-31FC3B9E45A3_b257497f.jpg" alt=""></div>\
+                                        <div class="input_rig"><textarea name="" id="" placeholder="回复" width="100%"></textarea>\
+                                        <label for="choose_file" class="choose_img"><img src="../images/icon_camera.svg" alt=""> &nbsp;添加图片<input type="file" id="choose_file"></label>\
+                                        <button class="send">发送</button>\
+                                    </div>\
+                                </div>\
+                                <div class="res_per"></div>\
+                            </div>\
+                        </div>\
+                    </li>');
+        $('.input_rig textarea').val('');
+        $('.reply').click(function(){
+            $(this).siblings().css('display','inline-block');
+        })
+        // 点击空白处消失
+        $(".report_button").click(function(event){
+          //取消冒泡事件
+            event.stopPropagation();//这句是必须
+            $(this).siblings().show();
+        });
+        $('.res_num').click(function(){
+            if(flag){
+                $(this).css({
+                    'background-image':'url(../images/icon_heart_made_in_berlin.svg)',
+                    'background-size':'16px'
+                 });
+                $(this).text(' 1');
+            }else{
+                 $(this).css({
+                    'background-image':'url(../images/icon_heart.svg)',
+                    'background-size':'16px'
+                 });
+                 $(this).text(' 0');
+            }
+            flag=!flag;
+        })
+        $('.dropdown_button').click(function(){
+            $('.modal-masks').css('display','table');
+        })
+        $('.modal-close-buttons').click(function(){
+            $('.modal-masks').css('display','none');
+        })
+        $('.box .section .comments .language button').click(function(){
+            if(flag){
+                $(this).siblings().css('display','block');
+            }else{
+                $(this).siblings().css('display','none');
+            }
+            flag=!flag;
+        })
+    }
+})
+$('.sum input:eq(0)').click(function(){
+    if (parseInt($(".num").text())>1) {
+        $('.num').text(parseInt($(".num").text())-1);
+        $('.egg').each(function(n){
+          $(this).text(($(this).text()/2));
+        })
+    }
+})
+$('.sum input:eq(1)').click(function(){
+    $('.num').text(parseInt($(".num").text())+1);
+    $('.egg').each(function(n){
+      $(this).text(($(this).text()*2));
+    })
+})

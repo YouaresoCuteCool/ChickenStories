@@ -194,7 +194,24 @@ option {
     min-height: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.8);
-    display: table;
+    display: none;
+}
+.loading-buttons{
+    border-radius: 4px;
+    height: 35px;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 10px auto;
+    margin-left: -10%;
+    transition: opacity 0.25s ease-out;
+    padding: 0 1rem 2px;
+    min-width: 100px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.loading-buttons:hover{
+    background-color: #0da299;
 }
 .modal-wrappers {
     display: table-cell;
@@ -262,10 +279,6 @@ label {
 .modal-report-component-main .loading-button {
     text-align: center;
 }
-.loading-button__label {
-    margin: 0;
-    padding: 0;
-}
 .box{
 	max-width: 860px;
 	width: 95%;
@@ -317,6 +330,7 @@ label {
 .box .box-nav .fr_share{
 	display: none;
 	float: right;
+    cursor: pointer;
 }
 .box .box-nav .fr_share img{
 	height: 20px;
@@ -419,23 +433,83 @@ label {
 	text-align: center;
 	font-weight: lighter;
 }
-.box .aside{
-	width: 34%;
-	float: right;
+.nav-header .dropdown {
+    position: absolute;
+    z-index: 998;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.33);
+    border-radius: 6px;
+    right: 2px;
+    top: 42px;
+    width: 230px;
+    display: none;
 }
-.box .aside .tigs{
+.nav-header .dropdown__btn {
+    padding: 1rem 1rem 1rem 3rem;
+    width: 230px;
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 300;
+}
+#button-facebook {
+    background: url(../images/icon_facebook.svg);
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: 15px;
+}
+#button-pinterest {
+    background: url(../images/icon_pinterest.svg);
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: 15px;
+}
+#button-twitter {
+    background: url(../images/icon_twitter.svg);
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: 15px;
+}
+#button-email {
+    background: url(../images/icon_mail.svg);
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: 15px;
+}
+#button-print {
+    background: url(../images/icon_print.svg);
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: 15px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.aside_box{
+    width: 34%;
+    float: right;
+}
+.box .aside{
+    width: 100%;
+    float: right;
+    background-color: #fff;
+}
+.box .aside_box .tigs{
 	padding-top: 20px;
 }
-.box .aside .tigs .tig-img{
+.box .aside_box .tigs .tig-img{
     width: 45%;
     float: left;
     margin-bottom: 15px;
 }
-.box .aside img{
+.box .aside_box img{
 	width:100%;
 	border-radius: 15px;
 }
-.box .aside .tigs .tig-tit{
+.box .aside_box .tigs .tig-tit{
 	height: 122px;
 	vertical-align: top;
 	font-size: 80%;
@@ -464,6 +538,7 @@ label {
     height: 16px;
     padding: 0px;
     margin: 0 0 2px;
+    cursor: pointer;
 }
 .box .section .material .ma_num{
 	width: 100%;
@@ -560,6 +635,7 @@ label {
 }
 .box .section .comm .comment-input{
 	width: 100%;
+    clear: both;
 }
 .box .section .comment-input .img_left{
 	width:62px;
@@ -616,17 +692,16 @@ label {
 .box .section .comment-input .send{
     background-color: #0da299;
     color: #fff;
-    border-radius: 4px;
-    height: 35px;
-    font-weight: 200;
-    font-size: 1rem;
-    margin: 0;
-    transition: opacity 0.25s ease-out;
-    padding: 0 1rem 2px;
-    min-width: 100px;
     float: right;
-    outline: none;
+    font-size: 1rem;
+    display: block;
+    border-radius: 4px;
+    padding:0.3rem 1.5rem;
     cursor: pointer;
+    font-weight: 400;
+    vertical-align: middle;
+    position:relative;
+    bottom: -10px; 
 }
 .box .section .comments{
 	list-style: none;

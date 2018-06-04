@@ -59,8 +59,8 @@
 						<input type="radio" name="res" id="reason-other" value="other">
 						<label for="reason-other">其他</label>
 						<p class="modal-report-component-main__submit">
-							<button class="loading-button loading-button--bg-green">
-								<div class="loading-button__label">提交举报</div>
+							<button class="loading-buttons loading-button--bg-green">
+								<div class="loading-button__labels">提交举报</div>
 							</button>
 						</p>
 					</div>
@@ -73,13 +73,13 @@
 			<img src="../images/R1240-photo-final-medium-landscape-200.jpg" alt="">
 		</div>
 		<div class="nav-header">
-		<div class="box-nav" id="describe">
+		<div class="box-nav">
 			<ul class="f_left">
 				<li class="active"><a href="#describe">概述</a></li>
 				<li><a href="#step">步骤</a></li>
 				<li><a href="#comment">评论(3)</a></li>
 			</ul>
-			<ul class="f_right">
+			<ul class="f_right" id="describe">
 				<li><a href=""><img src="../images/icon_facebook.svg" alt=""></a></li>
 				<li><a href=""><img src="../images/icon_twitter.svg" alt=""></a></li>
 				<li><a href=""><img src="../images/icon_pinterest.svg" alt=""></a></li>
@@ -87,6 +87,25 @@
 				<li><a href=""><img src="../images/icon_print.svg" alt=""></a></li>
 			</ul>
 			<div class="fr_share"><img src="../images/icon_share.svg" alt=""></div>
+			<div class="dropdown">
+				<ul>
+					<li>
+						<button id="button-facebook" class="dropdown__btn">在Facebook上分享</button>
+					</li>
+					<li>
+						<button id="button-pinterest" class="dropdown__btn">在Pinterest上分享</button>
+					</li>
+					<li>
+						<button id="button-twitter" class="dropdown__btn">在Twitter上分享</button>
+					</li>
+					<li>
+						<button id="button-email" class="dropdown__btn">邮件分享</button>
+					</li>
+					<li>
+						<button id="button-print" class="dropdown__btn">打印食谱</button>
+					</li>
+				</ul>
+			</div>
 		</div>
 		</div>
 		<div class="box-sec">
@@ -138,48 +157,48 @@
 					<div class="sum">
 						<span>份数：</span>
 						<input type="button" value="-">
-						<span class="num">½</span>
+						<span class="num">1</span>
 						<input type="button" value="+">
 					</div>
 					<table class="ma_num">
 						<tr>
-							<td class="col_num"><span>1</span></td>
+							<td class="col_num"><span class="egg">2</span></td>
 							<td class="col_name">鸡蛋</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>50</span>克</td>
+							<td class="col_num"><span class="egg">100</span>克</td>
 							<td class="col_name">绿芦笋</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>¼</span></td>
+							<td class="col_num"><span class="egg">0.5</span></td>
 							<td class="col_name">小葱</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>⅝</span> 克</td>
+							<td class="col_num"><span class="egg">1.25</span> 克</td>
 							<td class="col_name">欧芹</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>⅝</span> 克</td>
+							<td class="col_num"><span class="egg">1.25</span> 克</td>
 							<td class="col_name">山萝卜</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>⅝</span> 克</td>
+							<td class="col_num"><span class="egg">1.25</span> 克</td>
 							<td class="col_name">香葱</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>7½</span> 克</td>
+							<td class="col_num"><span class="egg">15</span> 克</td>
 							<td class="col_name">干番茄</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>6¼</span> 毫升</td>
+							<td class="col_num"><span class="egg">12.5</span> 毫升</td>
 							<td class="col_name">奶油</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>2½</span> 克</td>
+							<td class="col_num"><span class="egg">5</span> 克</td>
 							<td class="col_name">帕玛森奶酪</td>
 						</tr>
 						<tr>
-							<td class="col_num"><span>12½</span> 克</td>
+							<td class="col_num"><span class="egg">25</span> 克</td>
 							<td class="col_name">乳清干酪</td>
 						</tr>
 						<tr>
@@ -225,12 +244,12 @@
 					<h2>烹饪步骤 1/5</h2>
 					<img src="../images/R1240-photo-step-1-large-landscape-200.jpg" alt="">
 					<ul>
-						<li><span>¼</span><strong></strong>小葱 -</li>
-						<li><span>⅝</span><strong>克</strong>欧芹 -</li>
-						<li><span>⅝</span><strong>克</strong>山萝卜 -</li>
-						<li><span>⅝</span><strong>克</strong>香葱 -</li>
-						<li><span>7½</span><strong>克</strong>干番茄 -</li>
-						<li><span>50</span><strong>克</strong>绿芦笋</li>
+						<li><span class="egg">0.5</span><strong></strong>小葱 -</li>
+						<li><span class="egg">1.25</span><strong>克</strong>欧芹 -</li>
+						<li><span class="egg">1.25</span><strong>克</strong>山萝卜 -</li>
+						<li><span class="egg">1.25</span><strong>克</strong>香葱 -</li>
+						<li><span class="egg">15</span><strong>克</strong>干番茄 -</li>
+						<li><span class="egg">100</span><strong>克</strong>绿芦笋</li>
 					</ul>
 					<p>刀 - 砧板</p>
 					<div class="food_des">清洗小葱，切去根部后切成小圈。清洗并剁碎欧芹、山萝卜、和香葱。切好干番茄，待用。清洗芦笋，切去底部后纵向切半。</div>
@@ -248,9 +267,9 @@
 					<h2>烹饪步骤 3/5</h2>
 					<img src="../images/R1240-photo-step-2-large-landscape-200.jpg" alt="">
 					<ul>
-						<li><span>1</span><strong></strong>鸡蛋 -</li>
-						<li><span>6¼</span><strong>毫升</strong>奶油 -</li>
-						<li><span>2½</span><strong>克</strong>帕玛森奶酪 -</li>
+						<li><span class="egg">2</span><strong></strong>鸡蛋 -</li>
+						<li><span class="egg">12.5</span><strong>毫升</strong>奶油 -</li>
+						<li><span class="egg">5</span><strong>克</strong>帕玛森奶酪 -</li>
 						<li><span></span><strong></strong>盐 -</li>
 						<li><span></span><strong></strong>胡椒 </li>
 					</ul>
@@ -261,7 +280,7 @@
 					<h2>烹饪步骤 4/5</h2>
 					<img src="../images/R1240-photo-step-4-large-landscape-200.jpg" alt="">
 					<ul>
-						<li><span>12½ </span>克 <strong></strong>乳清干酪</li>
+						<li><span class="egg">25 </span>克 <strong></strong>乳清干酪</li>
 					</ul>
 					<div class="food_des">将蛋液混合物倒入煎锅中，没过芦笋。一点点放上乳清干酪，然后放进烤箱，以180度烤15-20分钟，或直至蛋液凝固。</div>
 				</div>
@@ -373,6 +392,7 @@
 					</li>
 				</ul>
 			</div>
+			<div class="aside_box">
 			<div class="aside">
 				<h4>更多美味创意</h4>
 				<div class="tigs">
@@ -392,7 +412,7 @@
 						<div class="tig-tit">大蒜兵豆沙拉佐酸奶酱</div>
 					</a>
 				</div>
-			</div>
+			</div></div>
 		</div>
 	</div>
 	<script src="../js/recipes-detail.js"></script>
