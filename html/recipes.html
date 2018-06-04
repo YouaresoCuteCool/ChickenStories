@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>食谱 | 厨房故事</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+	<script src="../js/jquery-3.3.1.js"></script>
+	<script src="../bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="../css/recipes.css">
+</head>
+<body>
+	<div class="box">
+		<div class="row">
+			<div class="search-widget">
+				<form id="recipes-search-form" action="/zh/shi-pu" class="search-form">
+					<input id="search-input" type="text" name="search" value="" placeholder="查找..." class="search-input live-search-active">
+					<div class="emojis">
+						<a href="/zh/shi-pu?search=薯条" class="emoji">🍟</a>
+						<a href="/zh/shi-pu?search=草莓" class="emoji">🍓</a>
+						<a href="/zh/shi-pu?search=寿司" class="emoji">🍣</a>
+					</div>
+				</form>
+				<button form="recipes-search-form" type="submit" class="button-xl search-button js-search-widget-search-button">查找</button>
+			</div>
+		</div>
+
+	</div>
+	<script src="../js/recipes.js"></script>
+</body>
+</html>
