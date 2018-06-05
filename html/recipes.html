@@ -8,8 +8,118 @@
 	<script src="../js/jquery-3.3.1.js"></script>
 	<script src="../bootstrap/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="../css/recipes.css">
+	<link rel="stylesheet" href="../css/head1.css" media = "screen and (min-width:1080px)">
+	<link rel="stylesheet" href="../css/head2.css" media = "screen and (max-width:1080px)">
+	<link rel="stylesheet" href="../css/head3.css" media = "screen and (max-width:750px)">
 </head>
 <body>
+	<header>
+		<div class="logo">
+			<div class="logo-cha"></div>
+			<div class="logo-image"></div>
+			<a href="">
+				<div class="logoHidden"></div>
+			</a>
+		</div>
+		<div class="navigation">
+			<ul>
+				<li><a href="">食谱</a></li>
+				<li><a href="">故事</a></li>
+				<li class="category"><a href="">类别</a>
+					<ul class="leibie-hover" style="background-color:white">
+						<li>
+							<ul class="hover-menu">
+								<li><a href="">亚洲风味</a></li>
+								<li><a href="">工作日晚餐</a></li>
+								<li><a href="">低于400卡</a></li>
+								<li><a href="">低卡</a></li>
+							</ul>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/leibie1.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">牛油果鲜虾披萨</a></p>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/leibie2.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">秘鲁酸橘汁腌鱼</a></p>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/leibie3.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">巧克力馅饼</a></p>
+						</li>
+					</ul>
+				</li>
+				<li class="tip"><a href="">小贴士</a>
+					<ul class="xiaotieshi-hover" style="background-color:white">
+						<li>
+							<ul class="hover-menu">
+								<li><a href="">用刀技巧</a></li>
+								<li><a href="">日常基础烹调法</a></li>
+								<li><a href="">烘焙方法</a></li>
+								<li><a href="">自制</a></li>
+							</ul>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi1.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">如何磨刀</a></p>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi2.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">如何制作鸡尾酒皮碎和皮拧</a></p>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi3.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">完美巧克力豆曲奇</a></p>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">视频</a></li>
+			</ul>
+		</div>
+		<div class="right-menu">
+			<a href="" class="search"><img src="../images/search.svg" alt=""></a>
+			<a href=""><span>s</span></a>
+		</div>  
+	</header>
+       <div class="minState">
+			<ul>
+				<a href=""><li>食谱</li></a>
+				<a href=""><li>故事</li></a>
+					<li class="lg"><a href="">类别</a>
+					 <ul>
+						<a href=""><li>亚洲风味</li></a>
+						<a href=""><li>工作日晚餐</li></a>
+						<a href=""><li>低于400卡</li></a>
+						<a href=""><li>低卡</li></a>
+					 </ul>
+				   </li>
+			    
+				
+				  <li class="lg"><a href="">小贴士</a>
+					<ul>
+						<a href=""><li>用刀技巧</li></a>
+						<a href=""><li>日常基础烹调法</li></a>
+						<a href=""><li>烘焙方法</li></a>
+						<a href=""><li>自制</li></a>
+					</ul>
+				 </li>
+			    
+				<a href=""><li>视频</li></a>
+				<a href=""><li>查找</li></a>
+			</ul>
+		</div>
 	<div class="box">
 		<div class="row">
 			<div class="search-widget">
@@ -24,8 +134,91 @@
 				<button form="recipes-search-form" type="submit" class="button-xl search-button js-search-widget-search-button">查找</button>
 			</div>
 		</div>
-
+		<div class="drop_down">
+		<div class="btn-group" role="group">
+			  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    分类 <span class="caret"></span>
+			  	</button>
+			  	<ul class="dropdown-menu">
+			   	 	<li><input type="checkbox" id="tou"><label for="tou">头盘</label></li>
+			   	 	<li><input type="checkbox" id="zhu"><label for="zhu">主菜</label></li>
+			   		<li><input type="checkbox" id="tian"><label for="tian">甜点</label></li>
+			    	<li><input type="checkbox" id="xiao"><label for="xiao">小吃</label></li>
+			    	<li><input type="checkbox" id="zao"><label for="zao">早餐</label></li>
+			    	<li><input type="checkbox" id="yin"><label for="yin">饮料</label></li>
+			 	</ul>
+		</div>
+		<div class="btn-group" role="group">
+			  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    难度 <span class="caret"></span>
+			  	</button>
+			  	<ul class="dropdown-menu">
+			   	 	<li><input type="checkbox" id="yi"><label for="yi">易</label></li>
+			   	 	<li><input type="checkbox" id="zho"><label for="zho">中度</label></li>
+			   	 	<li><input type="checkbox" id="nan"><label for="nan">难</label></li>
+			 	</ul>
+		</div>
+		<div class="btn-group" role="group">
+			  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    饮食偏好 <span class="caret"></span>
+			  	</button>
+			  	<ul class="dropdown-menu">
+			   	 	<li><input type="checkbox" id="su"><label for="su">素食</label></li>
+			   	 	<li><input type="checkbox" id="chun"><label for="chun">纯素食</label></li>
+			   	 	<li><input type="checkbox" id="wt"><label for="wt">无糖</label></li>
+			   	 	<li><input type="checkbox" id="wrt"><label for="wrt">无乳糖</label></li>
+			   	 	<li><input type="checkbox" id="wgj"><label for="wgj">无谷胶</label></li>
+			   	 	<li><input type="checkbox" id="wjj"><label for="wjj">无酒精</label></li>
+			 	</ul>
+		</div>
+		<div class="btn-group" role="group">
+			  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    备制时间 <span class="caret"></span>
+			  	</button>
+			  	<ul class="dropdown-menu">
+			   	 	<li><input type="checkbox" id="two"><label for="two">20分钟以内</label></li>
+			   	 	<li><input type="checkbox" id="three"><label for="three">30分钟以内</label></li>
+			   	 	<li><input type="checkbox" id="six"><label for="six">60分钟以内</label></li>
+			 	</ul>
+		</div>
+		<div class="btn-group" role="group">
+			  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    主要食材 <span class="caret"></span>
+			  	</button>
+			  	<ul class="dropdown-menu">
+			   	 	<li><input type="checkbox" id="niu"><label for="niu">牛肉</label></li>
+			   	 	<li><input type="checkbox" id="shu"><label for="shu">蔬菜</label></li>
+			   	 	<li><input type="checkbox" id="mian"><label for="mian">意面</label></li>
+					<li><input type="checkbox" id="qin"><label for="qin">禽肉</label></li>
+			   	 	<li><input type="checkbox" id="rou"><label for="rou">猪肉</label></li>
+			   	 	<li><input type="checkbox" id="hai"><label for="hai">海味</label></li>
+			 	</ul>
+		</div>
+		<div class="btn-group" role="group">
+			  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    风味 <span class="caret"></span>
+			  	</button>
+			  	<ul class="dropdown-menu" id="last-menu">
+			   	 	<li><input type="checkbox" id="can"><label for="can">中餐</label></li>
+			   	 	<li><input type="checkbox" id="italy"><label for="italy">意大利风味</label></li>
+			   	 	<li><input type="checkbox" id="india"><label for="india">印度风味</label></li>
+			   	 	<li><input type="checkbox" id="pu"><label for="pu">西班牙与葡萄牙风味</label></li>
+			   	 	<li><input type="checkbox" id="ame"><label for="ame">美式风味</label></li>
+			   	 	<li><input type="checkbox" id="zd"><label for="zd">中东美食</label></li>
+			   	 	<li><input type="checkbox" id="ya"><label for="ya">亚洲风味</label></li>
+			   	 	<li><input type="checkbox" id="france"><label for="france">法国风味</label></li>
+			   	 	<li><input type="checkbox" id="ou"><label for="ou">欧式菜肴</label></li>
+			 	</ul>
+		</div>
+		</div>
+		<div class="sel-recipes">
+			<p class="label">正在过滤</p>
+			<ul class="filter-tags">
+				<li class="clear-filter-li">清除所有</li>
+			</ul>
+		</div>
 	</div>
+	<script src="../js/head.js"></script>
 	<script src="../js/recipes.js"></script>
 </body>
 </html>

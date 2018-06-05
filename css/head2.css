@@ -1,0 +1,164 @@
+*{
+	margin:0;
+	padding:0;
+}
+html {
+    font-size: 110%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+	outline: none;
+}
+a{
+	text-decoration:none;
+	font-size:1rem;
+	color: #8e8e8e;
+}
+ul{
+	list-style-type:none;
+}
+input{
+	outline:none;
+	border:none;
+	-webkit-appearance:none;
+}
+header{
+	width:100%;
+	height:65px;
+	background-color:#fff;
+	border-bottom:1px solid #d8d8d8;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;
+}
+header .logo{
+	float:left;
+	width:60px;
+	height:65px;
+	margin-left:50px;
+}
+.logo-image{
+	width:57px;
+	height:57px;
+	margin:auto;
+	margin-top:8px;
+	background:url("../images/logo2.svg") no-repeat;
+	background-position:left center;
+}
+.logo-cha{
+	width:30px;
+	height:65px;
+	float:left;
+	margin-left:-30px;
+	margin-top:-1px;
+	cursor:pointer;
+	background:url("../images/cha.svg") no-repeat;	
+	background-position:left center;
+	display:none;
+}
+.logoHidden{
+	display:none;
+}
+header .navigation{
+	float:left;
+	width:400px;
+	height:65px;
+	margin-left:50px;
+}
+.navigation ul{
+   width:100%;
+   height:35px;
+   margin-top:18px;
+}
+.navigation>ul>li{
+    width:15%;
+    height:35px;
+    margin-right:20px;
+    float:left;
+    text-align:center;
+}
+.navigation>ul>li a{
+	color:#8e8e8e;
+}
+.navigation>ul>li a:hover{
+	color:black;
+	text-decoration: none;
+}
+.navigation>ul>li:hover{
+	color:black;
+	border-bottom:1px solid black;
+}
+.navigation .category .leibie-hover,.navigation .tip .xiaotieshi-hover{
+	border-bottom:1px solid #d8d8d8;
+	height:280px;
+	display:flex;
+	justify-content:center;
+	box-sizing:border-box;
+	padding:40px;
+	margin-top:-2px;
+	position:absolute;
+	width:100%;
+	left:0;
+}
+.navigation .category .leibie-hover li,.navigation .tip .xiaotieshi-hover li{
+     width:200px;
+     height:90%;
+     margin:15px 5px;
+}
+.leibie-hover .hover-menu li,.xiaotieshi-hover .hover-menu li{
+  width:80px;
+  height:40px;
+  text-align:left;
+}
+.leibie-hover .cai a img,.xiaotieshi-hover .cai a img{
+	width:190px;
+	border-radius:20px;
+	display:block;
+}
+.leibie-hover .cai p,.xiaotieshi-hover .cai p{
+	color:black;
+	margin-top:15px;
+}
+.category .hover-menu li a,.tip .hover-menu li a{
+	text-decoration:none;
+}
+.cai .p-menu a{
+	color:black;
+}
+.category .leibie-hover .hover-menu li a:hover,.tip .xiaotieshi-hover .hover-menu li a:hover{
+	color:black;
+}
+.cai>a:hover{
+	display:block;
+	width:190px;
+	border-radius:20px;
+	box-shadow:0 0 5px 5px #d8d8d8;
+}
+.minState{
+	display:none;
+}
+.right-menu{
+	float:right;
+	width:150px;
+	height:40px;
+	margin-top:20px;
+}
+.right-menu .search img{
+	display:block;
+	width:30px;
+	height:30px;
+}
+.right-menu .search{
+	display:inline-block;
+	width:40px;
+	height:30px;
+	border-right:1px solid black;
+	vertical-align:middle;
+}
+.right-menu a span{
+	background-color:#d8d8d8;
+	color:white;
+	padding:3px 10px;
+	margin-left:10px;
+}
