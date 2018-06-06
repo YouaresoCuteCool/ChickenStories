@@ -94,6 +94,7 @@ autoTextarea(text); // 调用
 document.addEventListener('scroll', function (event) { 
     var scrollDistance = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollDistance >= 600&&scrollDistance<=1500) {    // 触发的位置
+        document.getElementsByTagName('header')[0].style.cssText = 'position:fixed;top:-65px;left:0px;';
         document.getElementsByClassName('nav-header')[0].style.cssText = 'position:fixed;top:0px;left:0px;width:100%;border-bottom: 1px solid #CDCDCD;';
         document.getElementsByClassName('box-nav')[0].style.cssText="max-width: 860px;width: 95%;margin:0 auto;";
         document.getElementsByClassName('aside_box')[0].style.cssText = 'position:fixed;top:80px;max-width: 860px;width: 95%;margin:0 auto;';        
@@ -106,7 +107,8 @@ document.addEventListener('scroll', function (event) {
     }else{
         document.getElementsByClassName('nav-header')[0].style.cssText = 'position:static;';  
         document.getElementsByClassName('aside_box')[0].style.cssText='position:static;';
-        document.getElementsByClassName('aside')[0].style.cssText="position:static;";   
+        document.getElementsByClassName('aside')[0].style.cssText="position:static;";
+        document.getElementsByTagName('header')[0].style.cssText = 'position:fixed;top:0px;left:0px';   
     }
 });
 // 点赞
