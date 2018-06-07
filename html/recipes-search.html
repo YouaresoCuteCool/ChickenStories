@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>厨房故事 | anyone can cook</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/head1.css" media = "screen and (min-width:1080px)">
+	<link rel="stylesheet" href="../css/head2.css" media = "screen and (max-width:1080px)">
+	<link rel="stylesheet" href="../css/head3.css" media = "screen and (max-width:750px)">
+	<link rel="stylesheet" href="../css/recipes-search.css">
+	<script src="../js/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="" class="logo-one"><img src="../images/logo.svg" alt=""></a>
+			<a href="" class="logo-two"><img src="../images/logo2.svg" alt=""></a>
+			<input type="button">
+		</div>
+		<div class="navigation">
+			<ul>
+				<li><a href="recipes.html">食谱</a></li>
+				<li><a href="story.html">故事</a></li>
+				<li class="category"><a href="leibie.html">类别</a>
+					<ul class="leibie-hover" style="background-color:white">
+						<li>
+							<ul class="hover-menu">
+								<li><a href="leibie-fenlei.html">亚洲风味</a></li>
+								<li><a href="leibie-fenlei.html">工作日晚餐</a></li>
+								<li><a href="leibie-fenlei.html">低于400卡</a></li>
+								<li><a href="leibie-fenlei.html">低卡</a></li>
+							</ul>
+						</li>
+						<li class="cai">
+							<a href="leibie-fenlei.html">
+								<img src="../images/leibie1.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="leibie-fenlei.html">牛油果鲜虾披萨</a></p>
+						</li>
+						<li class="cai">
+							<a href="leibie-fenlei.html">
+								<img src="../images/leibie2.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="leibie-fenlei.html">秘鲁酸橘汁腌鱼</a></p>
+						</li>
+						<li class="cai">
+							<a href="leibie-fenlei.html">
+								<img src="../images/leibie3.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="leibie-fenlei.html">巧克力馅饼</a></p>
+						</li>
+					</ul>
+				</li>
+				<li class="tip"><a href="">小贴士</a>
+					<ul class="xiaotieshi-hover" style="background-color:white">
+						<li>
+							<ul class="hover-menu">
+								<li><a href="">用刀技巧</a></li>
+								<li><a href="">日常基础烹调法</a></li>
+								<li><a href="">烘焙方法</a></li>
+								<li><a href="">自制</a></li>
+							</ul>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi1.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">如何磨刀</a></p>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi2.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">如何制作鸡尾酒皮碎和皮拧</a></p>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi3.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">完美巧克力豆曲奇</a></p>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">视频</a></li>
+			</ul>
+		</div>
+		<div class="right-menu">
+			<a href="recipes-search.html" class="search"><img src="../images/search.svg" alt=""></a>
+			<a href="personal.html"><span>s</span></a>
+		</div>  
+	</header>
+	<div class="minState">
+		<ul>
+			<a href=""><li>食谱</li></a>
+			<a href="story.html"><li>故事</li></a>
+			<li class="lg"><a href="leibie.html">类别</a>
+				<ul>
+					<a href="leibie-fenlei.html"><li>亚洲风味</li></a>
+					<a href="leibie-fenlei.html"><li>工作日晚餐</li></a>
+					<a href="leibie-fenlei.html"><li>低于400卡</li></a>
+					<a href="leibie-fenlei.html"><li>低卡</li></a>
+				</ul>
+			</li>
+			<li class="lg"><a href="">小贴士</a>
+				<ul>
+					<a href=""><li>用刀技巧</li></a>
+					<a href=""><li>日常基础烹调法</li></a>
+					<a href=""><li>烘焙方法</li></a>
+					<a href=""><li>自制</li></a>
+				</ul>
+			</li>
+			<a href=""><li>视频</li></a>
+			<a href=""><li>查找</li></a>
+		</ul>
+	</div>
+	<div class="box">
+		<div class="box-header">
+			<div class="fl">
+				<input type="text" placeholder="查找...">
+				<br>
+				<p class="title">有什么特别的想法？试试我们的<a href="recipes.html">食谱搜索!</a> 👀</p>
+			</div>
+			<div class="fr">
+				<input type="radio" name="search-type" id="sf-all"><label for="sf-all" class="active">全部</label>
+				<input type="radio" name="search-type" id="sf-recipe"><label for="sf-recipe">食谱</label>
+				<input type="radio" name="search-type" id="sf-article"><label for="sf-article">故事</label>
+			</div>
+		</div>
+		<div class="box-list">
+			<h3>食谱（10）:</h3><br>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw01.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw02.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw03.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw04.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw05.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw06.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw07.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw08.jpg" alt="" class="tile-image" ></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw09.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="tile-container">
+				<a href="recipes-detail.html" class="tile-link">
+					<div class="tile-image-container"><img src="../images/straw10.jpg" alt="" class="tile-image"></div>
+					<div class="tile-information">
+						<div class="tile-information-content">
+							<h3 class="search-tile-title">德式草莓蛋糕</h3>
+							<div class="search-item-subtitle">
+								<p>40 分钟 - 易 👌</p>
+							</div>
+							<div class="search-tile-des">
+								<p>草莓, 面粉, 糖, 泡打粉, 香草糖（分次使用）, 黄油, 鸡蛋, 杏仁片, 马斯卡彭奶酪, 牛奶, 润滑用黄油, 佐餐用薄荷</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="../js/head.js"></script>
+	<script src="../js/recipes-search.js"></script>
+</body>
+</html>

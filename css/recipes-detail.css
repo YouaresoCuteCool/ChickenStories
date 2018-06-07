@@ -1,24 +1,24 @@
 *{
-	padding: 0;
-	margin:0;
-	-webkit-tap-highlight-color:transparent;
-	outline: none;
+    padding: 0;
+    margin:0;
+    -webkit-tap-highlight-color:transparent;
+    outline: none;
 }
 a{
-	text-decoration:none;
-	color: #464646;
+    text-decoration:none;
+    color: #464646;
 }
 button{
-	border:none;
-	background-color: transparent;
+    border:none;
+    background-color: transparent;
 }
 body{
-	font-family: Brandon,Helvetica,sans-serif,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-	color: #464646;
+    font-family: Brandon,Helvetica,sans-serif,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    color: #464646;
 }
 html{
-	box-sizing: border-box;
-	font-size: 110%;
+    box-sizing: border-box;
+    font-size: 110%;
 }
 h2 {
     font-size: 1.25rem;
@@ -29,14 +29,14 @@ h1, h2, h3, h4, h5 {
     line-height: 1.133;
 }
 h1{
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 body{
     position: relative;
 }
 a{
-	text-decoration: none;
-	color: #333;
+    text-decoration: none;
+    color: #333;
 }
 .modal-mask {
     -webkit-transition: opacity 0.2s ease;
@@ -78,10 +78,10 @@ a{
     outline: 0;
 }
 .cookbook-save-recipe-modal__recipe-title{
-	margin-top: 20px;
+    margin-top: 20px;
 }
 .modal-close-button{
-	cursor: pointer;
+    cursor: pointer;
     float: right;
     width: 18px;
     height: 18px;
@@ -108,7 +108,7 @@ a{
     outline: none;
 }
 .cookbook-save-recipe-modal__buttons{
-	font-weight: 600;
+    font-weight: 600;
     margin-left: 10%;
 }
 .cookbook-save-recipe-modal__headline {
@@ -136,16 +136,16 @@ a{
     cursor: pointer;
 }
 .default-button:hover{
-	color: #0da299;
+    color: #0da299;
 }
 .cookbook-save-recipe-modal__select {
     border: 1px solid #d8d8d8;
     border-radius: 4px;
     width: 80%;
-	margin-top: 15px;
+    margin-top: 15px;
 }
 select{
-	height: 2.21591rem;
+    height: 2.21591rem;
     padding: .45455rem;
     border: none;
     margin: 0 0 .90909rem;
@@ -264,7 +264,7 @@ label {
     color: #000;
 }
 .modal-close-buttons{
-	cursor: pointer;
+    cursor: pointer;
     float: right;
     width: 18px;
     height: 18px;
@@ -280,158 +280,162 @@ label {
     text-align: center;
 }
 .box{
-	max-width: 860px;
-	width: 95%;
-	margin:100px auto;
+    max-width: 860px;
+    width: 95%;
+    margin:100px auto;
 }
 .box .box-header{
-	width: 100%;	
+    width: 100%;    
 }
 .box .box-header img{
-	max-width: 100%;
+    max-width: 100%;
     height: auto;
     display: inline-block;
     vertical-align: middle;
-	border-radius: 10px;
+    border-radius: 10px;
 }
 .box .nav-header{
-	width: 100%;
-	margin:0 auto;
-	border-bottom: 1px solid #CDCDCD;
-	position: relative;
-	z-index: 99;
-	height: 50px;
-	background-color: white;
-	padding-top: 20px;
+    width: 100%;
+    margin:0 auto;
+    border-bottom: 1px solid #CDCDCD;
+    position: relative;
+    z-index: 99;
+    height: 50px;
+    background-color: white;
+    padding-top: 20px;
 }
 .box .box-nav ul{
-	list-style: none;	
+    list-style: none;   
 }
 .box .box-nav .f_left{
-	float: left;
+    float: left;
 }
 .box .box-nav .f_left .active a{
-	color: black;
-	padding:28px 0;
-	border-bottom: 2px solid #0a7f78;
+    color: black;
+    padding:26px 0;
+    border-bottom: 2px solid #0a7f78;
 }
 .box .box-nav ul li{
-	float: left;
+    float: left;
 }
 .box .box-nav .f_left li a{
-	color: #0a7f78;
+    color: #0a7f78;
     font-weight: 600;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
     margin-right: 2rem;
 }
 .box .box-nav .f_right{
-	float: right;
+    float: right;
+}
+.container{
+    clear: both;
+    padding-top: 40px;
 }
 .box .box-nav .fr_share{
-	display: none;
-	float: right;
+    display: none;
+    float: right;
     cursor: pointer;
 }
 .box .box-nav .fr_share img{
-	height: 20px;
+    height: 20px;
 }
 .box .box-nav .f_right img{
-	height: 20px;
+    height: 20px;
 }
 .box .box-nav .f_right li{
-	padding: 0 .45455rem;
+    padding: 0 .45455rem;
 }
 .box .box-sec{
-	clear: both;
-	padding-top: 20px;
+    clear: both;
+    padding-top: 20px;
 }
 .box .section{
-	width: 65%;
-	float: left;
+    width: 65%;
+    float: left;
 }
 .box .section .dot{
-	clear: both;
-	width: 100%;
-	background-image: url(../images/dot.png);
-	background-size: 6.5px 3px;
-	height: 3px;
-	margin-top: 55px;
+    clear: both;
+    width: 100%;
+    background-image: url(../images/dot.png);
+    background-size: 6.5px 3px;
+    height: 3px;
+    margin-top: 55px;
 }
 .box .box-sec .stars img{
-	width: 19px;
-	height: 19px;
-	margin-right: 10px;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
 }
 .box .box-sec .stars{
-	color: #464646;
-	font-size: 80%;
-	margin-top: 20px;
+    color: #464646;
+    font-size: 80%;
+    margin-top: 20px;
 }
 .box .box-sec .stars .like{
-	margin-top: 15px;
-	cursor: pointer;
+    margin-top: 15px;
+    cursor: pointer;
 }
 .box .box-sec .stars .like .heart{
-	background-image: url(../images/icon_heart.svg);
+    background-image: url(../images/icon_heart.svg);
     width: 21px;
     height: 21px;
     line-height: 21px;
     background-repeat: no-repeat; 
     background-position: 5px;
-	float:left;
-	padding-left: 28px;
-	margin-right: 5px;
+    float:left;
+    padding-left: 28px;
+    margin-right: 5px;
 }
 .box .box-sec .stars .like .save{
-	background-image: url(../images/save.svg);
+    background-image: url(../images/save.svg);
     width: 40px;
     height: 21px;
     line-height: 21px;
     background-repeat: no-repeat; 
     background-size: contain;
-	float:left;
-	padding-left: 22px;
-	margin-right: 5px;
+    float:left;
+    padding-left: 22px;
+    margin-right: 5px;
 }
 .box .box-sec .stars .like a{
-	color: #8e8e8e;
+    color: #8e8e8e;
     font-size: 80%;
 }
 .box .section .easy{
-	margin-top: 20px;
-	padding-bottom: 20px;
-	background-image: url(../images/dot.png);
-	background-size: 6.5px 3px;
-	background-repeat: repeat-x;
-	background-position: bottom;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../images/dot.png);
+    background-size: 6.5px 3px;
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 .box .section .easy h2{
-	margin: 0 2rem 0 0;
-	float: left;
+    margin: 0 2rem 0 0;
+    float: left;
 }    
 .box .section .time{
-	min-width: 360px;
-	clear: both;
-	padding-top: 20px;
-	padding-bottom: 130px;
-	margin: 0 auto;
-	background-image: url(../images/dot.png);
-	background-size: 6.5px 3px;
-	background-repeat: repeat-x;
-	background-position: bottom;
+    min-width: 360px;
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 130px;
+    margin: 0 auto;
+    background-image: url(../images/dot.png);
+    background-size: 6.5px 3px;
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 .box .section .time .clock-items{
-	float: left;
-	margin-left: 2rem;
+    float: left;
+    margin-left: 2rem;
 }
 .box .section .time .clock{
-	width: 80px;
-	height: 80px;
-	border:1px solid #CDCDCD;
-	border-radius: 40px;
-	color: #464646;
-	text-align: center;
-	font-weight: lighter;
+    width: 80px;
+    height: 80px;
+    border:1px solid #CDCDCD;
+    border-radius: 40px;
+    color: #464646;
+    text-align: center;
+    font-weight: lighter;
 }
 .nav-header .dropdown {
     position: absolute;
@@ -498,7 +502,7 @@ ul {
     background-color: #fff;
 }
 .box .aside_box .tigs{
-	padding-top: 20px;
+    padding-top: 20px;
 }
 .box .aside_box .tigs .tig-img{
     width: 45%;
@@ -506,30 +510,30 @@ ul {
     margin-bottom: 15px;
 }
 .box .aside_box img{
-	width:100%;
-	border-radius: 15px;
+    width:100%;
+    border-radius: 15px;
 }
 .box .aside_box .tigs .tig-tit{
-	height: 122px;
-	vertical-align: top;
-	font-size: 80%;
+    height: 122px;
+    vertical-align: top;
+    font-size: 80%;
     width: 50%;
     font-weight: 200;
     overflow: hidden;
     float: right;
 }
 .box .section .material{
-	margin-top: 30px;
+    margin-top: 30px;
 }
 .box .section .material span{
-	font-size: 80%;
-	font-weight: 600;
+    font-size: 80%;
+    font-weight: 600;
 }
 .box .section .material .num{
-	padding: 0 5px;
+    padding: 0 5px;
 }
 .box .section .material input{
-	vertical-align: middle;
+    vertical-align: middle;
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #0a7f78;
@@ -541,136 +545,136 @@ ul {
     cursor: pointer;
 }
 .box .section .material .ma_num{
-	width: 100%;
-	margin-top: 20px;
-	padding-bottom: 30px;
-	font-weight: 200;
-	background-image: url(../images/dot.png);
-	background-size: 6.5px 3px;
-	background-repeat: repeat-x;
-	background-position: bottom;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 200;
+    background-image: url(../images/dot.png);
+    background-size: 6.5px 3px;
+    background-repeat: repeat-x;
+    background-position: bottom;
 } 
 .box .section .material .ma_num .col_num{
-	width: 30%;
-	text-align: left;
+    width: 30%;
+    text-align: left;
 }
 .box .section .material .ma_num .col_name{
-	width: 70%;
+    width: 70%;
 }
 .box .section .nife{
-	padding: 30px 0;
-	background-image: url(../images/dot.png);
-	background-size: 6.5px 3px;
-	background-repeat: repeat-x;
-	background-position: bottom;
+    padding: 30px 0;
+    background-image: url(../images/dot.png);
+    background-size: 6.5px 3px;
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 .box .section .nife p{
-	font-weight: 200;
+    font-weight: 200;
 }
 .box .section .nutrition{
-	padding: 30px 0;
-	background-image: url(../images/dot.png);
-	background-size: 6.5px 3px;
-	background-repeat: repeat-x;
-	background-position: bottom;
+    padding: 30px 0;
+    background-image: url(../images/dot.png);
+    background-size: 6.5px 3px;
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 .box .section .nutrition .nutri{
-	display: flex;
+    display: flex;
 }
 .box .section .nutrition .nutri_item{
-	width: 10%;
-	padding-left: 5%;
-	padding-right: 10%;
-	font-weight: 200;
-	border-left: 1px solid #CDCDCD;
+    width: 10%;
+    padding-left: 5%;
+    padding-right: 10%;
+    font-weight: 200;
+    border-left: 1px solid #CDCDCD;
 }
 .box .section .nutrition .nutri_item:nth-child(1){
-	padding-left: 0%;
-	border-left: 1px solid transparent;
+    padding-left: 0%;
+    border-left: 1px solid transparent;
 }
 .box .steps{
-	padding-top: 20px;
-	font-weight: 200;
+    padding-top: 20px;
+    font-weight: 200;
 }
 .box .steps img{
-	width:100%;
-	border-radius: 15px;
+    width:100%;
+    border-radius: 15px;
 }
 .box .steps ul{
-	clear: both;
-	height: 18px;
-	list-style: none;
-	background-image: url(../images/icon_ingredients.svg);
-	background-repeat: no-repeat;
-	background-size: 25px 18px;
-	padding:0 0 15px 30px;
-	margin:10px 0;
+    clear: both;
+    height: 18px;
+    list-style: none;
+    background-image: url(../images/icon_ingredients.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 18px;
+    padding:0 0 15px 30px;
+    margin:10px 0;
 }
 .box .steps ul li{
-	float: left;
-	padding: 0 5px;
+    float: left;
+    padding: 0 5px;
 }
 .box .steps p{
-	clear: both;
-	background-image: url(../images/icon_utensils.svg);
-	background-repeat: no-repeat;
-	background-size: 25px 18px;
-	background-position:0px;
-	padding:10px 0 10px 30px;
+    clear: both;
+    background-image: url(../images/icon_utensils.svg);
+    background-repeat: no-repeat;
+    background-size: 25px 18px;
+    background-position:0px;
+    padding:10px 0 10px 30px;
 }
 .box .steps .food_des{
-	padding: 18px 0 30px 0;
-	border-top: 1px solid #CDCDCD;
+    padding: 18px 0 30px 0;
+    border-top: 1px solid #CDCDCD;
 }
 .box .section .comm{
-	background-image: url(../images/dot.png);
-	background-size: 6.5px 3px;
-	background-repeat: repeat-x;
-	background-position: top;
-	font-size: 1rem;
+    background-image: url(../images/dot.png);
+    background-size: 6.5px 3px;
+    background-repeat: repeat-x;
+    background-position: top;
+    font-size: 1rem;
     font-weight: 600;
 }
 .box .section .comm p{
-	padding: 20px 0 20px;
+    padding: 20px 0 20px;
 }
 .box .section .comm .comment-input{
-	width: 100%;
+    width: 100%;
     clear: both;
 }
 .box .section .comment-input .img_left{
-	width:62px;
-	float: left;
+    width:62px;
+    float: left;
 }
 .box .section .comment-input .img_left img{
-	width: 45px;
-	height: 45px;
-	overflow: hidden;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
     position: relative;
     border-radius: 3px;
     background-color: #f2f2f2;
     text-align: center;
 }
 .box .section .comment-input .input_rig{
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
     overflow: hidden;
     border-radius: 12px;
     border: 1px solid #d8d8d8;
     padding: 0.5rem 1rem 0;
 }
 .box .section .comment-input .input_rig textarea{
-	width: 100%;
-	resize: none;
-	border:none;
-	font-size: 1rem;
-	min-height: 50px;
-	word-wrap: break-word;
-	margin-bottom:30px; 
-	outline: none;
+    width: 100%;
+    resize: none;
+    border:none;
+    font-size: 1rem;
+    min-height: 50px;
+    word-wrap: break-word;
+    margin-bottom:30px; 
+    outline: none;
 }   
 .box .section .comment-input .choose_img{
-	float: left;
-	color: #222;
-	font-size: .79545rem;
+    float: left;
+    color: #222;
+    font-size: .79545rem;
     background-color: #f2f2f2;
     display: inline-block;
     border-radius: 4px;
@@ -681,13 +685,13 @@ ul {
     margin-bottom: 18px;
 }
 .box .section .comment-input input{
-	display: none;
+    display: none;
 }
 .box .section .comment-input .choose_img img{
-	width: 20px;
-	display:block;
-	float: left;
-	vertical-align: middle;
+    width: 20px;
+    display:block;
+    float: left;
+    vertical-align: middle;
 }
 .box .section .comment-input .send{
     background-color: #0da299;
@@ -704,16 +708,16 @@ ul {
     bottom: -10px; 
 }
 .box .section .comments{
-	list-style: none;
+    list-style: none;
 }
 .box .section .comments .headline{
-	font-size: 1rem;
+    font-size: 1rem;
     margin-bottom: 0.2rem;
     margin-top: -3px;
     display: inline;
 }
 .box .section .comments .time_ago{
-	color: #8e8e8e;
+    color: #8e8e8e;
     font-size: 80%;
     margin-bottom: 0.3rem;
 }
@@ -721,41 +725,41 @@ ul {
     margin-top: 0;
 }
 .box .section .report_button{
-	float: right;
-	border:none;
-	outline:none;
-	cursor: pointer; 
+    float: right;
+    border:none;
+    outline:none;
+    cursor: pointer; 
 }
 .box .section .comments .text{
-	margin-bottom: 0.1rem;
+    margin-bottom: 0.1rem;
     word-break: normal;
 }
 .box .section .comments li{
-	width: 100%;
-	clear: both;
+    width: 100%;
+    clear: both;
     overflow: hidden;
     border-bottom: 1px solid #f2f2f2;
     padding: 1.5rem 0 0.5rem;
     font-weight: 300;
 }
 .box .section .comments .img_left{
-	width:62px;
-	float: left;
+    width:62px;
+    float: left;
 }
 .box .section .comments .img_left img{
-	width: 45px;
-	height: 45px;
-	overflow: hidden;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
     position: relative;
     border-radius: 3px;
     background-color: #f2f2f2;
     text-align: center;
 }
 .box .section .comments .des_rig{
-	margin-left: 62px;
+    margin-left: 62px;
 }
 .box .section .comments .language button{
-	color: #8e8e8e;
+    color: #8e8e8e;
     font-size:80%;
     font-weight: 300;
     border:none;
@@ -763,7 +767,7 @@ ul {
     padding-bottom: 2px;
 }
 .box .section .comments .language .show_more{
-	border-left: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
     padding-left: 1rem;
     margin: 0.5rem 0 1rem;
     font-size:0.9rem;
@@ -781,13 +785,13 @@ ul {
     cursor: pointer;
 }
 .box .section .comments .dropdown_button:hover{
-	background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 .box .section .comments .response{
-	padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 .box .section .comments .response .res_all .res_num{
-	color: #8e8e8e;
+    color: #8e8e8e;
     font-size: 70%;
     font-weight: 300;
     border:none;
@@ -795,7 +799,7 @@ ul {
     cursor: pointer;
 }
 .box .section .comments .response .res_all .reply{
-	color: #8e8e8e;
+    color: #8e8e8e;
     font-size: 70%;
     font-weight: 300;
     border:none;
@@ -803,60 +807,60 @@ ul {
     cursor: pointer;
 }
 .box .section .comments .response button:nth-child(1){
-	background-image: url(../images/icon_heart.svg);
-	background-size: 14.5px 13px;
-	background-repeat: no-repeat;
-	width: 20px;
-	padding-left: 20px;
-	height: 13px;
-	margin-right: 10px;
-	vertical-align: middle;
+    background-image: url(../images/icon_heart.svg);
+    background-size: 14.5px 13px;
+    background-repeat: no-repeat;
+    width: 20px;
+    padding-left: 20px;
+    height: 13px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 .box .section .comments .response button:nth-child(2){
-	background-image: url(../images/icon_comment.svg);
-	width: 60px;
-	height: 13px;
-	background-size: 17.5px 13px;
-	background-repeat: no-repeat;
-	padding-left: 15px;
-	height: 13px;	
-	vertical-align: middle;
+    background-image: url(../images/icon_comment.svg);
+    width: 60px;
+    height: 13px;
+    background-size: 17.5px 13px;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    height: 13px;   
+    vertical-align: middle;
 }
 .box .section .comments .response .comment-input{
-	padding-top: 20px;
-	display: none;
+    padding-top: 20px;
+    display: none;
 }
 @media screen and (max-width: 750px){
-	html {
-   		font-size: 100%;
-   		box-sizing: border-box;
-	}
-	.box .box-nav .f_right{
-		display: none;
-	}
-	.box .box-nav .fr_share{
-		display: block;
-		float: right;
-	}
-	.box .box-nav .fr_share img{
-		height: 20px;
-	}
-	.box .aside{
-		display: none;
-	}
-	.box .section{
-		width: 100%;
-	}
-	.modal-content {
-    	padding: 0 3rem;
-	}
-	.modal-close-button {
-   		margin-top: 7px;
-	}
-	.modal-contents {
-   		padding: 0 3rem;
-	}
-	.modal-close-buttons {
-  		margin-top: 7px;
-	}
+    html {
+        font-size: 100%;
+        box-sizing: border-box;
+    }
+    .box .box-nav .f_right{
+        display: none;
+    }
+    .box .box-nav .fr_share{
+        display: block;
+        float: right;
+    }
+    .box .box-nav .fr_share img{
+        height: 20px;
+    }
+    .box .aside{
+        display: none;
+    }
+    .box .section{
+        width: 100%;
+    }
+    .modal-content {
+        padding: 0 3rem;
+    }
+    .modal-close-button {
+        margin-top: 7px;
+    }
+    .modal-contents {
+        padding: 0 3rem;
+    }
+    .modal-close-buttons {
+        margin-top: 7px;
+    }
 }

@@ -2,17 +2,13 @@
 	margin:0;
 	padding:0;
 }
-html {
-    font-size: 110%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color:transparent;
-	outline: none;
+html{
+	font-size:110%;
+	color:#8e8e8e;
 }
 a{
 	text-decoration:none;
 	font-size:1rem;
-	color: #8e8e8e;
 }
 ul{
 	list-style-type:none;
@@ -20,7 +16,6 @@ ul{
 input{
 	outline:none;
 	border:none;
-	-webkit-appearance:none;
 }
 header{
 	width:100%;
@@ -33,32 +28,18 @@ header{
 	z-index:999;
 }
 header .logo{
+	width:5%;
 	float:left;
-	width:60px;
-	height:65px;
-	margin-left:50px;
+	margin-top:10px;
+	margin-left:40px;
 }
-.logo-image{
+header .logo .logo-one img{
+	display:none;
+}
+header .logo .logo-two img{
 	width:57px;
 	height:57px;
-	margin:auto;
-	margin-top:8px;
-	background:url("../images/logo2.svg") no-repeat;
-	background-position:left center;
-}
-.logo-cha{
-	width:30px;
-	height:65px;
-	float:left;
-	margin-left:-30px;
-	margin-top:-1px;
-	cursor:pointer;
-	background:url("../images/cha.svg") no-repeat;	
-	background-position:left center;
-	display:none;
-}
-.logoHidden{
-	display:none;
+	display:block;
 }
 header .navigation{
 	float:left;
@@ -67,23 +48,23 @@ header .navigation{
 	margin-left:50px;
 }
 .navigation ul{
-   width:100%;
-   height:35px;
-   margin-top:18px;
+	width:100%;
+	height:35px;
+	margin-top:18px;
 }
 .navigation>ul>li{
-    width:15%;
-    height:35px;
-    margin-right:20px;
-    float:left;
-    text-align:center;
+	width:15%;
+	height:35px;
+	margin-right:20px;
+	float:left;
+	text-align:center;
 }
 .navigation>ul>li a{
 	color:#8e8e8e;
+	text-decoration: none;
 }
 .navigation>ul>li a:hover{
 	color:black;
-	text-decoration: none;
 }
 .navigation>ul>li:hover{
 	color:black;
@@ -102,14 +83,14 @@ header .navigation{
 	left:0;
 }
 .navigation .category .leibie-hover li,.navigation .tip .xiaotieshi-hover li{
-     width:200px;
-     height:90%;
-     margin:15px 5px;
+	width:200px;
+	height:90%;
+	margin:15px 5px;
 }
 .leibie-hover .hover-menu li,.xiaotieshi-hover .hover-menu li{
-  width:80px;
-  height:40px;
-  text-align:left;
+	width:80px;
+	height:40px;
+	text-align:left;
 }
 .leibie-hover .cai a img,.xiaotieshi-hover .cai a img{
 	width:190px;
@@ -146,19 +127,19 @@ header .navigation{
 }
 .right-menu .search img{
 	display:block;
-	width:30px;
-	height:30px;
+	width:20px;
+	height:20px;
 }
 .right-menu .search{
 	display:inline-block;
 	width:40px;
-	height:30px;
+	height:20px;
 	border-right:1px solid black;
 	vertical-align:middle;
 }
 .right-menu a span{
 	background-color:#d8d8d8;
 	color:white;
-	padding:3px 10px;
+	padding:1px 10px;
 	margin-left:10px;
 }

@@ -1,11 +1,9 @@
 window.onresize=function(){
 	var w = window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
-    if(w>750){
-    	$('.minState').css('display','none');
-    	$('.logo-cha').css('display','none');
-    	$('.logo-image').css('display','block')
-    }
-
+	if(w>750){
+		$('.minState').css('display','none');
+		$('.logo input').css('background','url("../images/logo3.svg") no-repeat');
+	}
 }
 $('.leibie-hover').hide();
 $('.xiaotieshi-hover').hide();
@@ -19,16 +17,14 @@ $('.tip').mouseover(function(){
 }).mouseout(function(){
 	$('.xiaotieshi-hover').hide();
 })
-
-$('.logo-image').click(function(){
-	$(this).css('display','none');
-	$(this).parent().children('.logo-cha').css('display','block');
-	$('.minState').css('display','block');
-})
-$('.logo-cha').click(function(){
-	$(this).css('display','none');
-	$(this).parent().children('.logo-image').css('display','block');
-	$('.minState').css('display','none');
-})
-
-                
+var flag=0;
+$('.logo input').click(function(){
+	if(flag%2 == 0){
+		$('.minState').css('display','block');
+		$('.logo input').css('background','url("../images/cha.svg") no-repeat');
+	}else{
+		$('.minState').css('display','none');
+		$('.logo input').css('background','url("../images/logo3.svg") no-repeat');
+	}
+	flag++;
+})      

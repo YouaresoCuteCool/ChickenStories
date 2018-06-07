@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的主页 | 厨房故事</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/head1.css" media = "screen and (min-width:1080px)">
+	<link rel="stylesheet" href="../css/head2.css" media = "screen and (max-width:1080px)">
+	<link rel="stylesheet" href="../css/head3.css" media = "screen and (max-width:750px)">
+	<link rel="stylesheet" href="../css/personal.css" media = "screen and (min-width:750px)">
+	<link rel="stylesheet" href="../css/personal1.css" media = "screen and (max-width:750px)">
+	<script src="../js/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="" class="logo-one"><img src="../images/logo.svg" alt=""></a>
+			<a href="" class="logo-two"><img src="../images/logo2.svg" alt=""></a>
+			<input type="button">
+		</div>
+		<div class="navigation">
+			<ul>
+				<li><a href="recipes.html">食谱</a></li>
+				<li><a href="story.html">故事</a></li>
+				<li class="category"><a href="leibie.html">类别</a>
+					<ul class="leibie-hover" style="background-color:white">
+						<li>
+							<ul class="hover-menu">
+								<li><a href="leibie-fenlei.html">亚洲风味</a></li>
+								<li><a href="leibie-fenlei.html">工作日晚餐</a></li>
+								<li><a href="leibie-fenlei.html">低于400卡</a></li>
+								<li><a href="leibie-fenlei.html">低卡</a></li>
+							</ul>
+						</li>
+						<li class="cai">
+							<a href="leibie-fenlei.html">
+								<img src="../images/leibie1.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="leibie-fenlei.html">牛油果鲜虾披萨</a></p>
+						</li>
+						<li class="cai">
+							<a href="leibie-fenlei.html">
+								<img src="../images/leibie2.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="leibie-fenlei.html">秘鲁酸橘汁腌鱼</a></p>
+						</li>
+						<li class="cai">
+							<a href="leibie-fenlei.html">
+								<img src="../images/leibie3.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="leibie-fenlei.html">巧克力馅饼</a></p>
+						</li>
+					</ul>
+				</li>
+				<li class="tip"><a href="">小贴士</a>
+					<ul class="xiaotieshi-hover" style="background-color:white">
+						<li>
+							<ul class="hover-menu">
+								<li><a href="">用刀技巧</a></li>
+								<li><a href="">日常基础烹调法</a></li>
+								<li><a href="">烘焙方法</a></li>
+								<li><a href="">自制</a></li>
+							</ul>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi1.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">如何磨刀</a></p>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi2.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">如何制作鸡尾酒皮碎和皮拧</a></p>
+						</li>
+						<li class="cai">
+							<a href="">
+								<img src="../images/tieshi3.jpg" alt="">
+							</a>
+							<p class="p-menu"><a href="">完美巧克力豆曲奇</a></p>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">视频</a></li>
+			</ul>
+		</div>
+		<div class="right-menu">
+			<a href="recipes-search.html" class="search"><img src="../images/search.svg" alt=""></a>
+			<a href="personal.html"><span>s</span></a>
+		</div>  
+	</header>
+       <div class="minState">
+			<ul>
+				<a href=""><li>食谱</li></a>
+				<a href="story.html"><li>故事</li></a>
+					<li class="lg"><a href="leibie.html">类别</a>
+					 <ul>
+						<a href="leibie-fenlei.html"><li>亚洲风味</li></a>
+						<a href="leibie-fenlei.html"><li>工作日晚餐</li></a>
+						<a href="leibie-fenlei.html"><li>低于400卡</li></a>
+						<a href="leibie-fenlei.html"><li>低卡</li></a>
+					 </ul>
+				   </li>
+				  <li class="lg"><a href="">小贴士</a>
+					<ul>
+						<a href=""><li>用刀技巧</li></a>
+						<a href=""><li>日常基础烹调法</li></a>
+						<a href=""><li>烘焙方法</li></a>
+						<a href=""><li>自制</li></a>
+					</ul>
+				 </li>
+				<a href=""><li>视频</li></a>
+				<a href=""><li>查找</li></a>
+			</ul>
+		</div>
+		<!-- 主页 -->
+		<div class="boder">
+		<div class="personal">
+			<div class="info">
+				<div class="scul">S
+                   <div class="hover-show">添加头像</div>
+				</div>
+				<div class="other">
+					<div class="username">saling</div>
+				    <div class="email">1234567890@XX.com</div>
+				     <button><img src="../images/design.svg" alt="">设置</button>
+				</div>   
+			</div>
+			<div class="nav-self">
+				<button>烹饪书</button>
+				<button>最爱</button>
+				<div class="chuangjian" style="display:none">
+					<div class="jia">
+					   <div class="shizi"></div>
+					   <h3>创建烹饪书</h3>
+				    </div>	
+				</div>
+			</div>
+			<div class="book-click">
+				<h3>您尚未创建任何烹饪书。</h3>
+				<h4>烹饪手册能够帮助更好归类食谱。</h4>
+				<div>
+					<div class="shizi"></div>
+					<h3>创建烹饪书</h3>
+				</div>				
+			</div>
+            <div class="love-click">
+            	<div class="aixin"></div>
+				<h3>你好像还未收藏任何食谱哦！</h3>
+				<h4>如果你喜欢某食谱或文章，只需要点击心形图标就可以收藏！<br>随时可以找到。</h4>				
+			</div>
+		</div>
+       <!-- 点击添加头像 -->
+		<div class="modal">
+			<div class="editScul">
+				<div class="white">
+					<div class="modalHeader">编辑头像<img src="../images/cha.svg" alt=""></div>
+					<div class="modalBody"><span>S</span></div>
+                    <div class="modal-foot">
+                    	<label for="picture">上传图片</label>
+                    	<input type="file" accept="image/jpeg,image/svg" id="picture" class="shaitu">
+					    <input type="button" value="删除图片" class="delete">
+                    </div>	
+				</div>
+			</div>
+		</div>
+		<!-- 点击设置 -->
+		<div class="modal-design">
+			<div class="editScul">
+				<div class="white">
+					<div class="modalHeader">设置<img src="../images/cha.svg" alt=""></div>
+					<div class="btn btn-ziliao"><button>编辑个人资料</button></div>
+					<div class="btn btn-pwd"><button>更改密码</button></div>
+					<div class="btn btn-tuichu"><button>退出</button></div>
+				</div>
+			</div>
+		</div>
+		<!-- 个人资料设置 -->
+		<div class="modal-person">
+			<div class="editScul">
+				<div class="white">
+					<div class="modalHeader"><img src="../images/arrow.svg" class="left">个人资料设置<img src="../images/cha.svg" class="right"></div>
+					<div class="modalBody"><span>S</span></div>
+                    <div class="modal-foot">
+                    	<label for="picture">上传图片</label>
+                    	<input type="file" accept="image/jpeg,image/svg" id="picture" class="shaitu">
+					    <input type="button" value="删除图片" class="delete">
+                    </div>	
+                    <div class="title">
+						<h4>名字</h4>
+						<input type="text" value="saling">
+					</div>
+					<div class="btn">
+						<input type="button" value="取消" class="cancel">
+						<input type="button" value="保存" class="reserve">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 更改密码 -->
+		<div class="modal-pwd">
+			<div class="editScul">
+				<div class="white">
+					<div class="modalHeader"><img src="../images/arrow.svg" class="left">更改密码<img src="../images/cha.svg" class="right"></div>
+                    <div class="title">
+						<h4>密码</h4>
+						<input type="password" placeholder="新密码">
+					</div>
+					 <div class="title">
+						<input type="password" placeholder="确认新密码">
+					</div>
+					<div class="btn">
+						<input type="button" value="取消" class="cancel">
+						<input type="button" value="保存" class="reserve">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 点击创建烹饪书 -->
+		<div class="modal-book">
+			<div class="editScul">
+				<div class="white">
+					<div class="modalHeader">创建烹饪书<img src="../images/cha.svg" alt=""></div>
+					<div class="modalBody"></div>
+					<div class="title">
+						<h4>标题</h4>
+						<input type="text" placeholder="命名你的烹饪书" class="minM">
+					</div>
+					<div class="btn">
+						<p class="more"></p>
+						<input type="button" value="取消" class="cancel">
+						<input type="button" value="保存" class="reserve">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/head.js"></script>
+	<script src="../js/personal.js"></script>
+</body>
+</html>
