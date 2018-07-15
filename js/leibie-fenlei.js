@@ -144,7 +144,8 @@ window.onresize=function(){
 	if(w>750){
 		$('.minState').css('display','none');
 		$('.container').css('display','block'); 
-		$('.btn').css('display','block');
+		$('.btns').css('display','block');
+		$('#footer').css('display','block');
 		$('.logo input').css('background','url("../images/logo3.svg") no-repeat');
 	}
 }
@@ -152,10 +153,12 @@ var flag5=0;
 $('.logo input').click(function(){
 	if(flag5%2 == 0){
 		$('.container').css('display','none');
-		$('.btn').css('display','none');
+		$('.btns').css('display','none');
+		$('#footer').css('display','none');
 	}else{
 		$('.container').css('display','block');
-		$('.btn').css('display','block');
+		$('.btns').css('display','block');
+		$('#footer').css('display','block');
 	}
 	flag5++;
 })

@@ -134,12 +134,14 @@ $('.logo input').click(function(){
 	if(flag2%2 == 0){
 		$('.minState').css('display','block');
 		$('.container').css('display','none');
-		$('.btn').css('display','none'); 
+		$('.btns').css('display','none'); 
+		$('#footer').css('display','none');
 		$('.logo input').css('background','url("../images/cha.svg") no-repeat')
 	}else{
 		$('.minState').css('display','none');
 		$('.container').css('display','block');
-		$('.btn').css('display','block'); 
+		$('.btns').css('display','block'); 
+		$('#footer').css('display','block');
 		$('.logo input').css('background','url("../images/logo3.svg") no-repeat')
 	}
 	flag2++;
@@ -149,7 +151,8 @@ window.onresize=function(){
 	if(w>750){
 		$('.minState').css('display','none');
 		$('.container').css('display','block');
-		$('.btn').css('display','block'); 
+		$('.btns').css('display','block'); 
+		$('#footer').css('display','block');
 		$('.logo input').css('background','url("../images/logo3.svg") no-repeat');
 	}
 }

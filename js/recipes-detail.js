@@ -1,12 +1,28 @@
+$('.sum input:eq(0)').click(function(){
+    if (parseInt($(".num").text())>1) {
+        $('.num').text(parseInt($(".num").text())-1);
+        $('.egg').each(function(n){
+          $(this).text(($(this).text()/2));
+      })
+    }
+})
+$('.sum input:eq(1)').click(function(){
+    $('.num').text(parseInt($(".num").text())+1);
+    $('.egg').each(function(n){
+      $(this).text(($(this).text()*2));
+  })
+})
 var flag2=0;
 $('.logo input').click(function(){
     if(flag2%2 == 0){
       $('.minState').css('display','block');
       $('.box').css('display','none'); 
+      $('#footer').css('display','none');
       $('.logo input').css('background','url("../images/cha.svg") no-repeat');
   }else{
       $('.minState').css('display','none');
       $('.box').css('display','block'); 
+      $('#footer').css('display','block');
       $('.logo input').css('background','url("../images/logo3.svg") no-repeat');
   }
   flag2++;
@@ -16,6 +32,7 @@ window.onresize=function(){
     if(w>750){
         $('.minState').css('display','none');
         $('.box').css('display','block');
+        $('#footer').css('display','block');
         $('.logo input').css('background','url("../images/logo3.svg") no-repeat');
     }
 }
@@ -113,20 +130,22 @@ autoTextarea(text); // 调用
 // 滚动到某个位置固定导航栏
 document.addEventListener('scroll', function (event) { 
     var scrollDistance = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollDistance >= 550&&scrollDistance<=1500) {    // 触发的位置
+    if (scrollDistance >= 560&&scrollDistance<=1600) {    // 触发的位置
         document.getElementsByTagName('header')[0].style.cssText = 'position:fixed;top:-65px;left:0px;';
         document.getElementsByClassName('nav-header')[0].style.cssText = 'position:fixed;top:0px;left:0px;width:100%;border-bottom: 1px solid #CDCDCD;';
         document.getElementsByClassName('box-nav')[0].style.cssText="max-width: 860px;width: 95%;margin:0 auto;";
-        document.getElementsByClassName('aside_box')[0].style.cssText = 'position:fixed;top:80px;max-width: 860px;width: 95%;margin:0 auto;';        
+        document.getElementsByClassName('aside_box')[0].style.cssText = 'position:fixed;top:80px;max-width: 860px;width: 95%;margin:0 auto;z-index:-1;';        
         document.getElementsByClassName('aside')[0].style.cssText="width:34%;margin-right:0px;";
-    }else if(scrollDistance>1500&&scrollDistance<=4500){
+        $('.f_left li').removeAttr('class');
+        $('.f_left li:eq(0)').addClass('active');
+    }else if(scrollDistance>1600&&scrollDistance<=4600){
         document.getElementsByClassName('nav-header')[0].style.cssText = 'position:fixed;top:0px;left:0px;width:100%;border-bottom: 1px solid #CDCDCD;';
         document.getElementsByClassName('box-nav')[0].style.cssText="max-width: 860px;width: 95%;margin:0 auto;";
         document.getElementsByClassName('aside_box')[0].style.cssText='position:static;';
         document.getElementsByClassName('aside')[0].style.cssText="position:static;"; 
         $('.f_left li').removeAttr('class');
         $('.f_left li:eq(1)').addClass('active');
-    }else if(scrollDistance>4500){
+    }else if(scrollDistance>4600){
         $('.f_left li').removeAttr('class');
         $('.f_left li:eq(2)').addClass('active');
         document.getElementsByClassName('nav-header')[0].style.cssText = 'position:fixed;top:0px;left:0px;width:100%;border-bottom: 1px solid #CDCDCD;';
@@ -295,18 +314,4 @@ $('.send').click(function(){
             flag=!flag;
         })
     }
-})
-$('.sum input:eq(0)').click(function(){
-    if (parseInt($(".num").text())>1) {
-        $('.num').text(parseInt($(".num").text())-1);
-        $('.egg').each(function(n){
-          $(this).text(($(this).text()/2));
-      })
-    }
-})
-$('.sum input:eq(1)').click(function(){
-    $('.num').text(parseInt($(".num").text())+1);
-    $('.egg').each(function(n){
-      $(this).text(($(this).text()*2));
-  })
 })

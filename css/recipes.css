@@ -16,13 +16,17 @@ html {
     -webkit-tap-highlight-color:transparent;
     outline: none;
 }
+a:hover{
+    text-decoration: none;
+}
 .box{
     max-width: 860px;
     width: 95%;
     margin: 100px auto;
 }
 .container{
-    width: 100%;
+    max-width: 860px;
+    width: 95%;
 }
 .row {
     display: inline-block;

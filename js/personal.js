@@ -84,6 +84,7 @@ window.onresize=function(){
 	if(w>750){
 		$('.minState').css('display','none');
 		$('.boder').css('display','block'); 
+		$('#footer').css('display','block');
 		$('.logo input').css('background','url("../images/logo3.svg") no-repeat');
 	}
 }
